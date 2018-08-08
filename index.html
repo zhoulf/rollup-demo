@@ -1,0 +1,16 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>rollup demo</title>
+</head>
+<body>
+	<script src="./bundle.js"></script>
+	<script>
+		var lib = myLib();
+
+		var json = lib.toJson();
+		console.log(json);
+		lib.axio('hello world', 1500);
+	</script>
+</body>
+</html>
